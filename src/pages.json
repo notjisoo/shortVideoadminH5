@@ -1,6 +1,12 @@
 {
 	"pages": [
 		{
+			"path": "pages/withdraw/withdraw",
+			"style": {
+				"navigationBarTitleText": "提现审核"
+			}
+		},
+		{
 			"path": "pages/logIn/logIn",
 			"style": {
 				"navigationBarTitleText": ""
@@ -12,12 +18,7 @@
 				"navigationBarTitleText": "数据概览"
 			}
 		},
-		{
-			"path": "pages/withdraw/withdraw",
-			"style": {
-				"navigationBarTitleText": "提现审核"
-			}
-		},
+		
 		{
 			"path": "pages/orderDetail/orderDetail",
 			"style": {

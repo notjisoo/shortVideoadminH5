@@ -1,8 +1,9 @@
 <template>
 	<view class="container">
-		<a-flex justify="center" align="center" vertical gap="10">
-			<h4>账号密码登录</h4>
-			<a-form :model="ruleForm" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" :rules="rules">
+		<a-flex gap="middle" vertical align="center">
+			<view>账号密码登录</view>
+
+			<a-form :model="ruleForm" :rules="rules">
 				<!-- 账号输入框 -->
 				<a-form-item name="username">
 					<a-input v-model:value="ruleForm.username" placeholder="账号"></a-input>
@@ -35,7 +36,6 @@ const ruleForm = ref({
 	captcha: '5521321dwsad',
 	soruce: 'mobile'
 })
-
 
 
 // 校验规则

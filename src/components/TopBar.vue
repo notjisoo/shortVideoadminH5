@@ -46,14 +46,9 @@ const handleSelect = (val: string) => {
 
 // 根据搜索条件查询订单
 const handleSearch = () => {
-    if (userSelectWhich.value === 'money') {
 
-    }
-    if (userSelectWhich.value === 'id') {
-
-    }
+    withdrawStore.searchWithDrawList(userSelectWhich.value, searchValue.value);
     // 根据userSelectWhich的值进行筛选，可以判断用户输入的是用户id还是金额来搜索。
-
 };
 
 

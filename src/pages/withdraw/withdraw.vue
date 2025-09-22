@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, reactive, nextTick } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 // import VirtualList from 'vue3-virtual-scroll-list'
 import TopBar from '@/components/TopBar.vue'
 import CardItem from '@/components/cardItem.vue'
@@ -61,14 +61,13 @@ async function getWidthDrawListFunc() {
 }
 
 
-
-
 function handleSelect() {
   console.log(`output-`, activeKey.value)
   // 在这里可以添加切换标签页时的逻辑，比如重新获取数据
   // fetchDataByTab(activeKey.value)
   // withdrawStore.searchWithDrawList(activeKey.value,)
   withdrawStore.tabsKey = activeKey.value
+  withdrawStore.searchResult = null
 }
 </script>
 
